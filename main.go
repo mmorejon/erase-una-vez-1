@@ -9,6 +9,7 @@ import (
 
 func main() {
 	for {
+		// get hostname from os
 		hostname, err := os.Hostname()
 		if err != nil {
 			log.Panicln("Error al obtener el hostname.")
