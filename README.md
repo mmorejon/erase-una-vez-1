@@ -22,7 +22,7 @@ hostname: a1f6df241a42 - érase una vez ...
 
 El funcionamiento de la aplicación puede ser modificado a través de variables de entorno:
 
-* `SLEEP_TIME` modifica el intervalo de tiempo entre mensajes
+* `SLEEP_TIME` modifica el intervalo de tiempo entre mensajes.
 * `CHARACTER` modifica el final del mensaje impreso en pantalla.
 
 ```bash
