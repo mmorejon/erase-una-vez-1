@@ -1,32 +1,34 @@
 # Erase una vez 1
 
-Aplicación golang de ejemplo utilizada en los ejercicios del libro [Érase una vez Kubernetes](https://leanpub.com/erase-una-vez-kubernetes).
+Aplicación Golang utilizada en los ejercicios del libro [Érase una vez Kubernetes](https://leanpub.com/erase-una-vez-kubernetes).
 
 ## Descripción
 
-La aplicación imprime mensajes en la consola indefinidamente. Es un ejemplo muy sencillo utilizado en múltiples secciones del libro.
-
-* incluye el nombre de la máquina en el mensaje.
-* intervalo entre mensajes de 1 segundo.
+La aplicación imprime mensajes en la consola. Es un ejemplo sencillo utilizado en múltiples secciones del libro.
 
 ## Funcionamiento
 
-Para ver si funcionamiento utilice el siguiente comando:
+Para ver su funcionamiento utilice el siguiente comando:
 
 ```bash
-docker container run --rm mmorejon/erase-una-vez-1:0.1.0
+docker container run --rm mmorejon/erase-una-vez-1:0.2.0
 
-Unable to find image 'mmorejon/erase-una-vez-1:0.1.0' locally
-0.1.0: Pulling from mmorejon/erase-una-vez-1
-df1c9afd99c2: Pull complete
-3b19b967ebdd: Pull complete
-Digest: sha256:d2720cca8356a27488b8399f8f7b51ffa94bd05fe7c913775170212bd48ead6f
-Status: Downloaded newer image for mmorejon/erase-una-vez-1:0.1.0
-Hostname: 5d4ea1374d88 - Erase una vez ...
-Hostname: 5d4ea1374d88 - Erase una vez ...
-Hostname: 5d4ea1374d88 - Erase una vez ...
-Hostname: 5d4ea1374d88 - Erase una vez ...
-Hostname: 5d4ea1374d88 - Erase una vez ...
-Hostname: 5d4ea1374d88 - Erase una vez ...
-Hostname: 5d4ea1374d88 - Erase una vez ...
+hostname: a1f6df241a42 - érase una vez ...
+hostname: a1f6df241a42 - érase una vez ...
+hostname: a1f6df241a42 - érase una vez ...
+```
+
+## Variables de entorno
+
+El funcionamiento de la aplicación puede ser modificado a través de variables de entorno:
+
+* `SLEEP_TIME` modifica el intervalo de tiempo entre mensajes
+* `CHARACTER` modifica el final del mensaje impreso en pantalla.
+
+```bash
+docker container run --rm --env SLEEP_TIME=3 --env CHARACTER="un castillo."  mmorejon/erase-una-vez-1:0.2.0
+
+hostname: 79053fe90f54 - érase una vez un castillo.
+hostname: 79053fe90f54 - érase una vez un castillo.
+hostname: 79053fe90f54 - érase una vez un castillo.
 ```
