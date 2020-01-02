@@ -26,7 +26,10 @@ El funcionamiento de la aplicación puede ser modificado a través de variables 
 * `CHARACTER` modifica el final del mensaje impreso en pantalla.
 
 ```bash
-docker container run --rm --env SLEEP_TIME=3 --env CHARACTER="un castillo."  mmorejon/erase-una-vez-1:0.2.0
+docker container run --rm \
+  --env SLEEP_TIME=3 \
+  --env CHARACTER="un castillo." \
+  mmorejon/erase-una-vez-1:0.2.0
 
 hostname: 79053fe90f54 - érase una vez un castillo.
 hostname: 79053fe90f54 - érase una vez un castillo.
