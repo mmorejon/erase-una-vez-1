@@ -4,13 +4,12 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"strconv"
 	"time"
 )
 
 var (
 	character string = "..."
-	sleepTime int    = 1
+	sleepTime string = "1s"
 )
 
 func main() {
@@ -29,8 +28,10 @@ func main() {
 
 		// sleep time
 		if len(os.Getenv("SLEEP_TIME")) != 0 {
-			sleepTime, err = strconv.Atoi(os.Getenv("SLEEP_TIME"))
+			sleepTime = os.Getenv("SLEEP_TIME")
 		}
-		time.Sleep(time.Duration(sleepTime) * time.Second)
+
+		sleepTimeDuration, _ := time.ParseDuration(sleepTime)
+		time.Sleep(sleepTimeDuration)
 	}
 }

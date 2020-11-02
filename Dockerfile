@@ -1,5 +1,5 @@
 # golang alpine 1.13.5-alpine
-FROM golang:1.13.5-alpine AS builder
+FROM golang:1.15.3-alpine AS builder
 # Create appuser.
 RUN adduser -D -g '' elf
 # Create workspace
@@ -14,8 +14,7 @@ COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-w -s" -a -installsuffix cgo -o /go/bin/erase-una-vez-1 .
 
 # build a small image
-FROM alpine:3.11.2
-LABEL description="Aplicación de ejemplo para el libro Érase una vez Kubernetes."
+FROM alpine:3.12.1
 LABEL language="golang"
 # import the user and group files from the builder.
 COPY --from=builder /etc/passwd /etc/passwd
