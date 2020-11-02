@@ -11,7 +11,7 @@ La aplicación imprime mensajes en la consola. Es un ejemplo sencillo utilizado 
 Para ver su funcionamiento utilice el siguiente comando:
 
 ```bash
-docker container run --rm mmorejon/erase-una-vez-1:0.2.0
+docker container run --rm mmorejon/erase-una-vez-1:0.2.1
 
 hostname: a1f6df241a42 - érase una vez ...
 hostname: a1f6df241a42 - érase una vez ...
@@ -27,9 +27,9 @@ El funcionamiento de la aplicación puede ser modificado a través de variables 
 
 ```bash
 docker container run --rm \
-  --env SLEEP_TIME=3 \
+  --env SLEEP_TIME="3s" \
   --env CHARACTER="un castillo." \
-  mmorejon/erase-una-vez-1:0.2.0
+  mmorejon/erase-una-vez-1:0.2.1
 
 hostname: 79053fe90f54 - érase una vez un castillo.
 hostname: 79053fe90f54 - érase una vez un castillo.
