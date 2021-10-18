@@ -22,8 +22,10 @@ hostname: a1f6df241a42 - érase una vez ...
 
 El funcionamiento de la aplicación puede ser modificado a través de variables de entorno:
 
-* `SLEEP_TIME` modifica el intervalo de tiempo entre mensajes.
-* `CHARACTER` modifica el final del mensaje impreso en pantalla.
+|Variable de entorno|Descripción|Tipo|Valor por defecto|
+|--|---|---|---|
+|`SLEEP_TIME`| Modifiva el intervalo de tiempo.|String|`"1s"`|
+|`CHARACTER`| Texto que se adiciona al final de la frase.|String|`"..."`|
 
 ```bash
 docker container run --rm \
