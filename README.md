@@ -2,6 +2,8 @@
 
 Aplicación Golang utilizada en los ejercicios del libro [Érase una vez Kubernetes](https://leanpub.com/erase-una-vez-kubernetes).
 
+Traducción: [English](README_en.md)
+
 ## Descripción
 
 La aplicación imprime mensajes en la consola. Es un ejemplo sencillo utilizado en múltiples secciones del libro.

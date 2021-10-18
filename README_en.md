@@ -2,6 +2,8 @@
 
 Golang application used in the exercises in the book [Erase una vez Kubernetes](https://leanpub.com/erase-una-vez-kubernetes).
 
+Translation: [Español](README.md)
+
 ## Description
 
 This application print messages in the console. It is a simple example used in multiple chapters of the book.
