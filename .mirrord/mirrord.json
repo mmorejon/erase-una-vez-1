@@ -1,0 +1,11 @@
+{
+    "target": "pod/erase-una-vez-1",
+    "feature": {
+        "network": {
+            "incoming": "mirror",
+            "outgoing": true
+        },
+        "fs": "read",
+        "env": true
+    }
+}
