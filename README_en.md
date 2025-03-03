@@ -13,7 +13,7 @@ This application print messages in the console. It is a simple example used in m
 Use the following command to run the application:
 
 ```bash
-docker container run --rm mmorejon/erase-una-vez-1:0.2.1
+docker container run --rm ghcr.io/mmorejon/erase-una-vez-1:v0.3.2
 
 hostname: a1f6df241a42 - érase una vez ...
 hostname: a1f6df241a42 - érase una vez ...
@@ -33,7 +33,7 @@ The app behavior can be changed through different environment variables:
 docker container run --rm \
   --env SLEEP_TIME="3s" \
   --env CHARACTER="un castillo." \
-  mmorejon/erase-una-vez-1:0.2.1
+  ghcr.io/mmorejon/erase-una-vez-1:v0.3.2
 
 hostname: 79053fe90f54 - érase una vez un castillo.
 hostname: 79053fe90f54 - érase una vez un castillo.
