@@ -8,7 +8,7 @@
 
 This repository is a practical example created for the book **"Once Upon a Time Kubernetes"**.
 
-👇 **Get the updated 2025 edition here:** 👇
+👇 **Get the updated 2026 edition here:** 👇
 
 [![Amazon](https://img.shields.io/badge/Amazon-Buy_Paperback-orange?style=for-the-badge&logo=amazon)](https://www.amazon.es/dp/B0F9VPCJ7X)
 [![LeanPub](https://img.shields.io/badge/LeanPub-Download_Ebook-blue?style=for-the-badge&logo=leanpub)](https://leanpub.com/once-upon-a-time-kubernetes)

@@ -8,7 +8,7 @@
 
 Aplicación Golang utilizada en los ejercicios del libro Érase una vez Kubernetes.
 
-👇 **Consigue la edición actualizada 2025 aquí:** 👇
+👇 **Consigue la edición actualizada 2026 aquí:** 👇
 
 [![Amazon](https://img.shields.io/badge/Amazon-Comprar_en_Tapa_Blanda-orange?style=for-the-badge&logo=amazon)](https://www.amazon.es/dp/8409212765)
 [![LeanPub](https://img.shields.io/badge/LeanPub-Descargar_Ebook-blue?style=for-the-badge&logo=leanpub)](https://leanpub.com/erase-una-vez-kubernetes)
