@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="./assets/book-cover.jpg" alt="Portada Libro Érase una vez Kubernetes" width="300"/>
+<img src="https://github.com/mmorejon/erase-una-vez-k8s/blob/main/assets/book-cover.jpg" alt="Portada Libro Érase una vez Kubernetes" width="300"/>
 
 Aplicación Golang utilizada en los ejercicios del libro Érase una vez Kubernetes.
 
